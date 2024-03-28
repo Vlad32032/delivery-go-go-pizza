@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:inherit;
+}
+
+:root {
+    /* colors */
+	--white: #fff;
+	--beige: #c1ab91;
+	--dark: #2c2826;
+	--orange: #ff8a00;
+	--light: #fbf3e8;
+
+    /* font */
+    --font-family: "Nunito", sans-serif;
+    --font-main-color: var(--dark);
+
+    /* container */
+    --container-max-width: 1300px;
+    --container-padding: 14px;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+
+    color: var(--font-main-color);
+    background-color: var(--light);
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    
+    /* Сглаживает шрифт для улучшения читаемости на экранах с высоким разрешением. */
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+
+    /* Оптимизирует качество отображения текста для лучшей читаемости. */
+    /* text-rendering: optimizeLegibility; */
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-height: 100%;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: calc(var(--container-max-width) + var(--container-padding) * 2);
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}
