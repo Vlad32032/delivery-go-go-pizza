@@ -1,0 +1,99 @@
+.toppings {
+    padding: 24px 0;
+}
+
+.toppings__title {
+    position: fixed;
+
+    transform: scale(0);
+}
+
+.toppings__button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding-bottom: 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: var(--font-base-line-height);
+
+    transition: padding-bottom 0.5s ease;
+}
+
+.toppings__button-arrow {
+    transition: transform 0.5s ease;
+}
+
+.toppings__button_active {
+    padding-bottom: 16px;
+}
+
+.toppings__button_active .toppings__button-arrow {
+    transform: scaleY(-1);
+}
+
+.toppings__list {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height 0.4s ease-in;
+}
+
+.toppings__list_show {
+    display: flex;
+}
+
+.toppings__checkbox {
+    position: absolute;
+
+    appearance: none;
+}
+
+.toppings__label {
+    display: block;
+
+    padding: 8px 24px;
+
+    background-color: var(--white);
+    border-radius: 32px;
+    
+    color: var(--beige);
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border 0.3s ease;
+}
+
+.toppings__checkbox:hover+.toppings__label { 
+    background-color: var(--white);
+    
+    color: var(--orange);
+}
+
+.toppings__checkbox:focus-visible+.toppings__label {
+    padding: 7px 23px;
+ 
+    background-color: var(--white);
+    border: 1px solid var(--orange-strong);
+    
+    color: var(--orange);
+}
+
+.toppings__checkbox:checked+.toppings__label {
+    background-color: var(--orange);
+    
+    color: var(--white);
+}
+

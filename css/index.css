@@ -1,6 +1,13 @@
+/* base */
 @import './base/normalize.css';
 @import './base/fonts.css';
-@import './main/main.css';
+@import './base/base.css';
 
-/* blocks */
-@import './layout/header.css'
+/* layout */
+@import './layout/header.css';
+@import './layout/hero.css';
+@import './layout/toppings.css';
+@import './layout/pizzas.css';
+
+ /* components */
+ @import './components/card.css';

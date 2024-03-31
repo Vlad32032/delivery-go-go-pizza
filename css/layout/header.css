@@ -1,15 +1,27 @@
 .header {
+    position: relative;
+
+    margin-bottom: -44px;
     
+    z-index: 5;
 }
 
 .header__container {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding-top: 24px;
 }
 
 .header__logo {
-
+    width: 120px;
 }
 
 .header__cart {
+    color: var(--dark);
+}
 
+.header__cart:hover {
+    color: var(--orange)
 }

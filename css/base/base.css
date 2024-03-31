@@ -11,14 +11,19 @@ html {
 :root {
     /* colors */
 	--white: #fff;
+    --light: #fbf3e8;
 	--beige: #c1ab91;
 	--dark: #2c2826;
 	--orange: #ff8a00;
-	--light: #fbf3e8;
-
-    /* font */
-    --font-family: "Nunito", sans-serif;
+    --orange-pastel: #eb8a14;
+    --orange-strong: #b66200;
+    --greenish-yellow: #ecd55a;
+    
+	
+    /* fonts */
+    --font-family: 'Nunito', sans-serif;
     --font-main-color: var(--dark);
+    --font-base-line-height: 1.4;
 
     /* container */
     --container-max-width: 1300px;
@@ -33,7 +38,9 @@ body {
     background-color: var(--light);
 
     font-family: var(--font-family);
+    font-weight: 400;
     font-size: 16px;
+    line-height: var(--font-base-line-height);
     
     /* Сглаживает шрифт для улучшения читаемости на экранах с высоким разрешением. */
     /* -webkit-font-smoothing: antialiased;
@@ -41,6 +48,8 @@ body {
 
     /* Оптимизирует качество отображения текста для лучшей читаемости. */
     /* text-rendering: optimizeLegibility; */
+
+    /* overflow: hidden; */
 }
 
 img,
@@ -57,7 +66,7 @@ svg {
 button {
     padding: 0;
     background-color: transparent;
-    border: none; 
+    border: none;
     cursor: pointer;
 }
 
@@ -90,6 +99,10 @@ p {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.svg-sprite {
+    display: none;
 }
 
 .container {

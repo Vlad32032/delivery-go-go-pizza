@@ -1,0 +1,17 @@
+.pizzas {
+    padding: 24px 0;
+}
+
+.pizzas__title {
+    margin-bottom: 24px;
+
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.pizzas__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
