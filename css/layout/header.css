@@ -25,3 +25,19 @@
 .header__cart:hover {
     color: var(--orange)
 }
+
+
+
+@media (width >= 540px) {
+    .header {
+        margin-bottom: -63px;
+    }
+
+    .header__container {
+        padding-top: 40px;
+    }
+
+    .header__logo {
+        width: 164px;
+    }
+}

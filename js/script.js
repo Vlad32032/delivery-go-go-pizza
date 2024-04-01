@@ -13,7 +13,6 @@ const openToppingsList = () => {
             toppingsList.classList.remove('toppings__list_show');
            
         }, 500);
-        
     }
 };
 

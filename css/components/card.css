@@ -32,6 +32,10 @@
 }
 
 .card__info {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+
     margin-bottom: 16px;
 
     color: var(--beige);
@@ -55,4 +59,15 @@
     color: var(--orange);
     font-size: 14px;
     line-height: var(--font-base-line-height);
+}
+
+
+
+@media (width >= 540px) {
+}
+
+@media (width >= 900px) {
+}
+
+@media (width >= 1140px) {
 }
