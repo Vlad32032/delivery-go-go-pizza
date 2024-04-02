@@ -1,5 +1,6 @@
 .pizzas {
     padding: 24px 0;
+    margin-bottom: 24px;
 }
 
 .pizzas__title {
@@ -21,6 +22,7 @@
 @media (width >= 640px) {
     .pizzas {
         padding: 64px 0;
+        margin-bottom: 40px;
     }
 
     .pizzas__title {

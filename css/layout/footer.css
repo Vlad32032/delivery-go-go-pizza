@@ -1,0 +1,42 @@
+.footer {
+    margin-bottom: 24px;
+
+    border-top: 1px solid var(--beige);
+    
+    color: var(--beige);
+    font-size: 14px;
+}
+
+.footer__conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 222px;
+    padding: 32px 0;
+}
+
+.footer__copyright {
+    margin-bottom: 16px;
+}
+
+.footer__link {
+    cursor: pointer;
+}
+
+
+
+@media (width >= 640px) {
+    .footer {
+        margin-bottom: 40px;
+
+        font-size: 20px;
+    }
+
+    .footer__logo {
+        width: 400px;
+        padding: 64px 0;
+    }
+}
