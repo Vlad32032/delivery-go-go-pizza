@@ -75,8 +75,25 @@
     font-weight: 600;
     font-size: 14px;
     line-height: var(--font-base-line-height);
+
+    transition: 
+        color 0.3s ease,
+        background-color 0.33s ease,
+        transform 0.3s ease;
 }
 
+.hero__order:hover {
+    padding: 7px 23px;
+
+    background-color: var(--orange);
+    border: 1px solid var(--light);
+
+    color: var(--light);
+}
+
+.hero__order:active {
+    transform: scaleY(0.93);
+}
 
 
 @media (width >= 640px) {
@@ -150,12 +167,19 @@
     }
 
     .hero__title {
-        margin-bottom: 64px;
+        margin-bottom: 24px;
     
         font-size: 80px;
     }
 
     .hero__tagline {
         margin-bottom: 50px;
+    }
+}
+
+@media (width >= 1540px) {
+    .hero__container::after {
+        bottom: -87px;
+        right: 20%;
     }
 }

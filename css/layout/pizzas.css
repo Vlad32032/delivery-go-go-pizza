@@ -17,7 +17,14 @@
     gap: 12px;
 }
 
+.pizzas__item {
+    display: flex;
+    flex-direction: column;
+}
 
+.pizzas_card {
+    flex-grow: 1;
+}
 
 @media (width >= 640px) {
     .pizzas {
