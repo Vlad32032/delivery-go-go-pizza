@@ -19,6 +19,7 @@ html {
     --orange-strong: #b66200;
     --greenish-yellow: #ecd55a;
     
+    --opacity-dark: rgba(44, 40, 38, 0.89);
 	
     /* fonts */
     --font-family: 'Nunito', sans-serif;

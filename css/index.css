@@ -11,4 +11,5 @@
 @import './layout/footer.css';
 
  /* components */
- @import './components/card.css';
+@import './components/card.css';
+@import './components/loader.css';
