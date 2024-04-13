@@ -97,6 +97,30 @@
     color: var(--white);
 }
 
+.toppings__checkbox:checked+.toppings__label:hover {
+    color: var(--dark);
+}
+
+.toppings__reset {
+    color: var(--orange);
+    line-height: var(--font-base-line-height);
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border 0.3s ease;
+}
+
+.toppings__reset:hover {
+    background-color: var(--orange);
+
+    color: var(--white);
+}
+
+.toppings__reset:active {
+    color: var(--dark);
+}
+
 
 
 @media (width >= 540px) {
