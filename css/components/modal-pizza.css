@@ -1,0 +1,119 @@
+.modal-pizza {
+
+}
+
+.modal-pizza__main{
+    max-width: 368px;
+}
+
+.modal-pizza__image img{
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.modal-pizza__title {
+    margin-bottom: 4px;
+
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.modal-pizza__toppings {
+    margin-bottom: 4px;
+
+    font-size: 14px;
+}
+
+.modal-pizza__info {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    color: var(--beige);
+}
+
+.modal-pizza__price {
+    color: var(--dark);
+}
+
+
+.modal-pizza__form {
+
+}
+
+.modal-pizza__fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    
+
+    border: 1px solid var(--light);
+    border-radius: 32px;
+}
+
+.modal-pizza__radio {
+    position: absolute;
+
+    appearance: none;
+}
+
+.modal-pizza__label {
+    width: 100%;
+    padding: 10px;
+
+    font-size: 12px;
+    text-align: center;
+    color: var(--beige);
+
+    cursor: pointer;
+}
+
+.modal-pizza__radio:checked+.modal-pizza__label {
+    background-color: var(--light);
+    border-radius: 32px;
+
+    color: var(--orange);
+}
+
+.modal-pizza__add-cart {
+    width: 100%;
+    padding: 8px 24px;
+    margin-top: 12px;
+
+    background-color: var(--orange);
+    border-radius: 32px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: var(--font-base-line-height);
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+@media (width >= 640px) {
+    .modal-pizza__title {
+        font-size: 24px;
+    }
+
+    .modal-pizza__toppings {
+        font-size: 20px;
+    }
+
+    .modal-pizza__info {
+        font-size: 20px;
+    }
+
+    .modal-pizza__label {
+        font-size: 16px;
+    }
+
+    .modal-pizza__add-cart {
+        font-size: 20px
+    }
+}

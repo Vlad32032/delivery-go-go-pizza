@@ -1,0 +1,44 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 14px;
+
+    background-color: var(--opacity-dark);
+    overflow-y: auto;
+
+    cursor: pointer;
+}
+
+.modal__main {
+    position: relative;
+
+    padding: 24px 16px 16px;
+
+    background-color: var(--white);
+    border-radius: 32px;
+
+    cursor: default;
+}
+
+.modal__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+@media (width >= 640px) {
+    .modal__main {
+        padding: 24px;
+    }
+
+    .modal__close {
+        top: 24px;
+        right: 24px;
+    }
+}

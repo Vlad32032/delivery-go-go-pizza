@@ -29,7 +29,11 @@ const createCard = (data) => {
 };
 
 export const renderPizzas = async (checkedToppings) => {
-    const pizzas = await getData('https://sable-observant-moose.glitch.me/api/products');
+    const api =`https://sable-observant-moose.glitch.me/api/products${
+        checkedToppings ? `?toppings=${checkedToppings}` : '' 
+    }`;
+    
+    const pizzas = await getData(api);
     const pizzasList = document.querySelector('.pizzas__list');
     pizzasList.innerHTML = '';
 

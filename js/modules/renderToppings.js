@@ -25,6 +25,13 @@ const createButtonReset = () => {
 
     itemReset.append(buttonReset);
 
+    itemReset.addEventListener('click', () => {
+        setTimeout(() => {
+            renderPizzas();
+            itemReset.remove();
+        }, 50);
+    }); 
+
     return itemReset;
 };
 
@@ -42,14 +49,20 @@ export const renderToppings = async () => {
 
     toppingsList.append(...items);
 
-    toppingsForm.addEventListener('change', (event) => {
-        const formData = new FormData(toppingsForm);
+    const buttonReset = createButtonReset();
 
+    toppingsForm.addEventListener('change', () => {
         const checkedToppings = [];
+
+        const formData = new FormData(toppingsForm);
 
         for (const [, value] of formData.entries()) {
             checkedToppings.push(value);
         };
+
+        checkedToppings.length > 0 
+            ? toppingsList.append(buttonReset)
+            : buttonReset.remove();
 
         renderPizzas(checkedToppings);
     });
