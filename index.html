@@ -57,18 +57,25 @@
                     </svg>
                 </button>
 
-                <form class="toppings__form">
+                <form class="toppings__form" id="toppings-form">
                     <ul class="toppings__list"></ul>
                 </form>
-                
             </div>
         </section>
 
         <section class="pizzas">
             <div class="container">
-                <h2 class="pizzas__title">Пицца</h2>
+                <div class="pizzas__main">
+                    <h2 class="pizzas__title">Пицца</h2>
 
-                <ul class="pizzas__list"></ul>
+                    <ul class="pizzas__list"></ul>
+                </div>
+
+                <div class="pizzas__not-found">
+                    <h2 class="pizzas__title">Такой пиццы у&nbsp;нас нет&nbsp;:&shy(</h2>
+
+                    <button class="pizzas__button" form="toppings-form" type="reset">Сбросить фильтр</button>
+                </div>
             </div>
         </section>
     </main>

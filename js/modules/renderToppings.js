@@ -14,6 +14,8 @@ const createTopping = (ruName, enName) => {
 };
 
 const createButtonReset = () => {
+    const pizzasButton = document.querySelector('.pizzas__button');
+
     const itemReset = document.createElement('li');
     itemReset.classList.add('toppings__item');
 
@@ -25,12 +27,15 @@ const createButtonReset = () => {
 
     itemReset.append(buttonReset);
 
-    itemReset.addEventListener('click', () => {
+    const itemResetEvent = () => {
         setTimeout(() => {
             renderPizzas();
             itemReset.remove();
         }, 50);
-    }); 
+    }
+
+    itemReset.addEventListener('click', itemResetEvent);
+    pizzasButton.addEventListener('click', itemResetEvent);
 
     return itemReset;
 };
@@ -66,6 +71,4 @@ export const renderToppings = async () => {
 
         renderPizzas(checkedToppings);
     });
-
-
 };

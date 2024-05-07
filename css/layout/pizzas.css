@@ -26,6 +26,21 @@
     flex-grow: 1;
 }
 
+.pizzas__button {
+    padding: 8px 24px;
+
+    background-color: var(--white);
+    border-radius: 32px;
+    
+    color: var(--beige);
+    font-size: 14px;
+    line-height: var(--font-base-line-height);
+}
+
+.pizzas__not-found {
+    display: none;
+}
+
 @media (width >= 640px) {
     .pizzas {
         padding: 64px 0;
@@ -39,6 +54,10 @@
     .pizzas__list {
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         gap: 16px;
+    }
+
+    .pizzas__button {
+        font-size: 20px;
     }
 }
 

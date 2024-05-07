@@ -1,4 +1,5 @@
 import { getData } from "./getData.js";
+import { renderToppings } from "./renderToppings.js";
 
 const createCard = (data) => {
     const card = document.createElement('li');
@@ -35,13 +36,23 @@ export const renderPizzas = async (checkedToppings) => {
     
     const pizzas = await getData(api);
     const pizzasList = document.querySelector('.pizzas__list');
+    const pizzaMain = document.querySelector('.pizzas__main');
+    const pizzaNotFound = document.querySelector('.pizzas__not-found');
+
+    pizzaMain.style.display = 'block';
+    pizzaNotFound.style.display = 'none';
     pizzasList.innerHTML = '';
 
-    const items = pizzas.map(data => {
-        const card = createCard(data);
+    if (pizzas.length > 0) {
+        const items = pizzas.map(data => {
+            const card = createCard(data);
 
-        return card;
-    });
-
-    pizzasList.append(...items);
+            return card;
+        });
+        
+        pizzasList.append(...items);
+    } else {
+        pizzaMain.style.display = 'none';
+        pizzaNotFound.style.display = 'block';
+    };
 };
