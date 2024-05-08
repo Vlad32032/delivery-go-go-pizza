@@ -1,9 +1,15 @@
 import { getData } from "./getData.js";
-import { renderToppings } from "./renderToppings.js";
+import { renderModal } from "./renderModal.js";
 
 const createCard = (data) => {
     const card = document.createElement('li');
     card.classList.add('pizzas__item')
+
+    card.onclick = (event) => {
+        if (event.target.dataset.id) {
+            renderModal(data);
+        };
+    };
 
     card.innerHTML = `
         <article class="card pizzas_card">
